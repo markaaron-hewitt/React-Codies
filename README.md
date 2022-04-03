@@ -1,2 +1,2 @@
-# React-Noughts-and-Crosses
-Simple Noughts and Crosses Game written in React
+# React-Codies
+Codies game written in React
