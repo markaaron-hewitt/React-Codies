@@ -154,8 +154,8 @@ function Home(){
     //var words = randomizeWords();
 
     const consoleLog = () => {
-        //console.log("testing testing 123");
-        console.log(spymaster);
+        console.log("testing testing 123");
+        //console.log(spymaster);
     }
 
     return (
@@ -168,7 +168,7 @@ function Home(){
             </Grid>
             <Grid item container xs={12} alignItems="center" justifyContent={"center"}>
                 <Grid item xs={3}>
-                    <Button sx={{ boxShadow: 3 }} onClick={resetGame} variant="contained" color="secondary">Reset Game</Button>
+                    
                 </Grid>
                 <Grid item xs={6} height={67}>
                     <ThemeProvider theme={theme}>
@@ -176,23 +176,23 @@ function Home(){
                     </ThemeProvider>
                 </Grid>
                 <Grid item xs={3}>
-                    <Button sx={{ boxShadow: 3 }} onClick={endGame} variant="contained" color="secondary">End Game</Button>
+                    
                 </Grid>
             </Grid>
             <Grid item xs={12}>
                 <CodiesGrid gameOver={(endMessage[0] != "")} onClick={wordButton} words={words} revealedStates={revealed} solution={solution} spymaster={spymaster}/>
             </Grid>
             <Grid item xs={3}>
-                <Button sx={{ boxShadow: 3 }} onClick={consoleLog} variant="contained" color="secondary">Test</Button>
-                </Grid>
-            <Grid item xs={6}>
-                <Button sx={{ boxShadow: 3 }} onClick={consoleLog} variant="contained" color="secondary">Test</Button>
+                <Button sx={{ boxShadow: 3 }} onClick={resetGame} variant="contained" color="secondary">New Game</Button>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={6}>
                 <FormControlLabel control={<Switch color="secondary" onChange={(e,c) => setSpymaster(c)}/>}
                 label={<Typography color="secondary" fontWeight={700}>Spymaster?</Typography>}
                 color="secondary"
-                labelPlacement="start"/>
+                labelPlacement="top"/>
+            </Grid>
+            <Grid item xs={3}>
+            <Button sx={{ boxShadow: 3 }} onClick={endGame} variant="contained" color="secondary">End Game</Button>
             </Grid>
         </Grid>
     )
