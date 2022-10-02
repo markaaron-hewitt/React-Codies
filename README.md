@@ -1,5 +1,5 @@
 # React-Codies
-Codies game written in React.
+Codies game written in React.\
 Back-end currently in development using Socket.io (Currently this project is fully functional locally but does not connect multiplayer).
 
 # Getting Started with Create React App
