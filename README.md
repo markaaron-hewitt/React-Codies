@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+# React-Codies
+Codies game written in React.
+Back-end currently in development using Socket.io.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
